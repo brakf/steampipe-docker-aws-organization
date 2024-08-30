@@ -42,8 +42,7 @@ docker run -it --rm \
   --env MODE=INTERACTIVE  \
   --env ENABLED_REGIONS='us-east-1,eu-central-1,ap-southeast-1' \
   -v $HOME/.aws/credentials:/home/steampipe/.aws/credentials:ro \
-  steampipe-aws-org:latest \
-  steampipe query
+  steampipe-aws-org:latest
 ```
 
 
