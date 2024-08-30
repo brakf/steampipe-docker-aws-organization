@@ -54,3 +54,4 @@ docker run -it --rm \
 - `SOURCE_PROFILE`: The AWS CLI profile to use (only required if `ENVIRONMENT_TYPE` is `LOCAL`).
 - `MODE`: `SERVER` or `INTERACTIVE` mode
 - `ENABLED_REGIONS`: Specified the AWS regions that should be included. `*` for all regions.
+- `EXCLUDED_ACCOUNTS`: Exclude specific accounts from the config, e.g. because the audit role isn't deployed there, etc. Format: '123456789012,987654321098' 
