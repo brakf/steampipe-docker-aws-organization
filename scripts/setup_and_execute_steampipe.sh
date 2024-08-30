@@ -68,6 +68,9 @@ grep -c '^\[profile' $AWS_CONFIG_FILE_PATH
 echo "Number of created Steampipe Connections (incl. 1 aggregate connection ):"
 grep -c '^connection' $STEAMPIPE_CONFIG_PATH
 
+#Run test query to generate auto-completion 
+steampipe query "select count(*) as \"Accounts\" from aws_account;"
+
 if [ "$MODE" = "INTERACTIVE" ]; then
     steampipe query
 elif [ "$MODE" = "SERVER" ]; then
