@@ -1,6 +1,3 @@
-# steampipe-docker-aws-cross-organization
-Dockerfile for Steampipe that automatically generates the AWS and Steampipe config for cross-organization queries
-
 # Steampipe AWS Organizations Docker Container
 
 This repository contains a Dockerfile and accompanying scripts to set up a Docker container for querying AWS Organizations using [Steampipe](https://steampipe.io/). This setup is particularly useful for auditing AWS accounts across an organization using cross-account roles.
